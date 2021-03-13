@@ -1,0 +1,1 @@
+javac -d mods --module-source-path src  src/com.claudiodesio.rubrica.dati/module-info.java src/com.claudiodesio.rubrica.dati/com/claudiodesio/rubrica/dati/*.java src/com.claudiodesio.rubrica.eccezioni/module-info.java src/com.claudiodesio.rubrica.eccezioni/com/claudiodesio/rubrica/eccezioni/*.java

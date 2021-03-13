@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eje>
+ <preferences>
+    <tab-spaces>4</tab-spaces>
+    <work-dir>/home/cdsc/projects/EJE</work-dir>
+    <lang>it_IT</lang>
+    <class-wizard>on</class-wizard>
+    <eje-style>default</eje-style>
+    <braces-style>C</braces-style>
+    <prologue>Written by me</prologue>  
+    <colors>
+      <keyword>blue</keyword>
+      <common>dark_grey</common>
+      <string>green</string>
+      <char>dark_red</char>
+      <number>dark_red</number>
+      <operator>light_grey</operator>
+    </colors>
+  </preferences>
+</eje>

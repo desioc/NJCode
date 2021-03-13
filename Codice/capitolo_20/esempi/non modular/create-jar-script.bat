@@ -1,0 +1,1 @@
+jar --create --file jfxarchive.jar --main-class com.claudiodesio.javafx.FirstJFXExample com res

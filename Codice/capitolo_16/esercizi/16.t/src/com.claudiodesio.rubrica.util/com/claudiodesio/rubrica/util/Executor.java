@@ -1,0 +1,7 @@
+package com.claudiodesio.rubrica.util;
+
+@FunctionalInterface
+public interface Executor {
+
+    void esegui() throws Exception;
+}

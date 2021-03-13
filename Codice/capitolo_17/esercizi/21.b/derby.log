@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Apr 30 18:12:20 CEST 2020:
+Avvio della versione di Derby The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): istanza a816c00e-0171-cbdc-3cd3-00000e809b70
+sulla directory di database C:\Users\claud\OneDrive\Java 15\Codice\capitolo_21\21.b\Phonebook con caricatore classi sun.misc.Launcher$AppClassLoader@66d3c617 
+Caricato da file:/D:/Shared/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_212-b10
+user.dir=C:\Users\claud\OneDrive\Java 15\Codice\capitolo_21\21.b
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Programma di caricamento classe database avviato - derby.database.classpath=''

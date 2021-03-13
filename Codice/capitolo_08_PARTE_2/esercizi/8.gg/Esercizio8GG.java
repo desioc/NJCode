@@ -1,0 +1,42 @@
+import java.util.*;
+import javax.swing.*;
+
+public class Esercizio8GG {
+    private Scanner scanner;
+    private CartesianPlane cartesianPlane;
+
+    public Esercizio8GG() {
+        scanner = new Scanner(System.in);
+    }
+    
+    public void start() {
+        SwingUtilities.invokeLater(() -> cartesianPlane = new CartesianPlane());
+        Punto p1 = getPunto("P1");
+        cartesianPlane.drawPoint(p1);
+    }
+
+    private int getCoordinata(String nomeCoordinata, String nomePunto) {
+        System.out.println("Inserisci coordinata "+ nomeCoordinata +" per il punto "+ nomePunto);
+        while (scanner.hasNext()) {
+            if (scanner.hasNextInt()) {
+                return scanner.nextInt();
+            } else {
+                System.out.println("Coordinata non valida "+  scanner.next() +"!, Le coordinate devono essere di tipo intero! Prego reinserire");
+            }
+        }
+        return -1;
+    }
+
+    private Punto getPunto(String nomePunto) {
+        int x = getCoordinata("x", nomePunto);
+        int y = getCoordinata("y", nomePunto);
+        Punto p = new Punto(nomePunto, x,y);
+        System.out.println("Creato punto:"+ p);
+        return p;
+    }
+
+    public static void main(String args[]) {
+        Esercizio8GG esercizio8GG = new Esercizio8GG();
+        esercizio8GG.start();
+    }
+}

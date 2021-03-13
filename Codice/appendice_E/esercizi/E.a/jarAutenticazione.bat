@@ -1,0 +1,1 @@
+jar -cvfm autenticazione.jar manifest.txt com/claudiodesio/autenticazione/*.class

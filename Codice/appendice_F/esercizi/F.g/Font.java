@@ -1,0 +1,3 @@
+public enum Font {
+    ARIAL, TIMES_NEW_ROMAN, COURIER, MONOSPACED;
+}

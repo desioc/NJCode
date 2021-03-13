@@ -1,0 +1,1 @@
+javac -d mods/com.claudiodesio.rubrica.dati src/com.claudiodesio.rubrica.dati/module-info.java src/com.claudiodesio.rubrica.dati/com/claudiodesio/rubrica/dati/*.java

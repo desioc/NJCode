@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emails>
+	<email>
+		<from>claudio@claudiodesio.com</from>
+		<recipients>daxixlx.sxpxrx@gmail.com</recipients>
+		<subject>Nuovo progetto</subject>
+		<body>A che punto siamo?</body>
+	</email>
+	<email>
+		<from>daxixlx.sxpxrx@gmail.com</from>
+		<recipients>claudio@claudiodesio.com</recipients>
+		<subject>Nuovo progetto</subject>
+		<body>Ho quasi finito!</body>
+	</email>
+	<email>
+		<from>claudio@claudiodesio.com</from>
+		<recipients>daxixlx.sxpxrx@gmail.com</recipients>
+		<subject>Nuovo progetto</subject>
+		<body>Ok, concludiamo! Ciao!</body>
+	</email>
+</emails>
+

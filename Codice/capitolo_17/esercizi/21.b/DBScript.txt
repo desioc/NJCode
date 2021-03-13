@@ -1,0 +1,4 @@
+CREATE TABLE Contact (Name VARCHAR(50), Phone VARCHAR(20), Address VARCHAR(255), PRIMARY KEY (Name))
+INSERT INTO Contact (Name, Phone, Address) VALUES ('Claudio De Sio Cesari', '131313131313', '13, Java Street')
+INSERT INTO Contact (Name, Phone, Address) VALUES ('Stevie Wonder', '1010101010', '10, Music Avenue')
+INSERT INTO Contact (Name, Phone, Address) VALUES ('Gennaro Capuozzo', '1111111111', '1, Four Days of Naples Square')

@@ -1,0 +1,7 @@
+<!DOCTYPE user
+[
+<!ELEMENT user (name,surname,id)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+]>

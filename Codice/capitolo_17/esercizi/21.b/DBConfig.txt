@@ -1,0 +1,3 @@
+db.url=jdbc:derby:Phonebook;create=true
+db.user=
+db.pwd=

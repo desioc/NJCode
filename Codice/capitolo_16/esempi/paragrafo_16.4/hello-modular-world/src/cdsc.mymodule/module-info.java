@@ -1,0 +1,2 @@
+module cdsc.mymodule {
+}

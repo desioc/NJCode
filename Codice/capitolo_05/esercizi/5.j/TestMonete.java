@@ -1,0 +1,19 @@
+/**
+ * Classe di test per le classi Moneta e PortaMonete.
+ * 
+ * @author Claudio De Sio Cesari
+ */
+public class TestMonete {
+
+    public static void main(String args[]) {
+        Moneta monetaDaVentiCentesimi = new Moneta(20);
+        Moneta monetaDaUnCentesimo = new Moneta(1);     
+        Moneta monetaDaUnEuro = new Moneta(100);
+        // Creiamo un portamonete con 8 monete
+        PortaMonete portaMonete = new PortaMonete(2, 5, 100, 10, 50, 10, 100,
+            200);
+        // Creiamo un portamonete con 11 monete
+        PortaMonete portaMoneteInsufficiente = new PortaMonete(2, 5, 100, 10,
+            50, 10, 100, 200, 10, 5, 2);
+    }
+}

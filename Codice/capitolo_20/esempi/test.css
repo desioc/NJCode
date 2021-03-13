@@ -1,0 +1,9 @@
+.label { 
+	-fx-text-fill: rgb(255,0,0);
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
+#back {
+	-fx-background-image: url("rock.jpg");
+}

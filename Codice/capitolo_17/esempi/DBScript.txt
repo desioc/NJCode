@@ -1,0 +1,7 @@
+CONNECT 'jdbc:derby:Music;create=true';
+CREATE TABLE Album ( AlbumId INT, Title VARCHAR(20), Artist VARCHAR(255), Release_Year INT, PRIMARY KEY (AlbumId)); 
+INSERT INTO Album (AlbumId, Title, Artist, Release_Year) VALUES (1, 'Made In Japan', 'Deep Purple', 1972); 
+INSERT INTO Album (AlbumId, Title, Artist, Release_Year) VALUES (2, 'Be', 'Pain Of Salvation', 2004); 
+INSERT INTO Album (AlbumId, Title, Artist, Release_Year) VALUES (3, 'Images And Words', 'Dream Theater', 1992); 
+INSERT INTO Album (AlbumId, Title, Artist, Release_Year) VALUES (4, 'The Human Equation', 'Ayreon', 2004);
+
