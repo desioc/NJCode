@@ -1,7 +1,0 @@
-CONNECT 'jdbc:derby:Rubrica;create=true';
-CREATE TABLE Contatto ( Nome VARCHAR(50), Telefono VARCHAR(20), Email VARCHAR(255), PRIMARY KEY (Nome)); 
-INSERT INTO Contatto (Nome, Telefono, Email) VALUES ('Claudio', '8934897783', 'claudio.desio@gmail.com'); 
-INSERT INTO Contatto (Nome, Telefono, Email) VALUES ('Sergio', '64566456', 'sergio.compagnone@gmail.com'); 
-INSERT INTO Contatto (Nome, Telefono, Email) VALUES ('Antonio', '3454573', 'antonio.rubino@gmail.com'); 
-INSERT INTO Contatto (Nome, Telefono, Email, ) VALUES ('Giuseppe', '0680854', 'giuseppe.falsone@gmail.com',);
-
