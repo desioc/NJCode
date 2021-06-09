@@ -1,18 +1,18 @@
 public class OggettoModificabile {
-    private String nome;
-    public OggettoModificabile (String nome){
-        this.nome = nome;
+    private String titolo;
+    public OggettoModificabile (String titolo){
+        this.titolo = titolo;
     }
 
-    public void setTitolo(String nome) {
-        this.nome = nome;
+    public void setTitolo(String titolo) {
+        this.titolo = titolo;
     }
 
     public String getTitolo() {
-        return nome;
+        return titolo;
     }
 
     public String toString() {
-        return nome;
+        return titolo;
     }
 }

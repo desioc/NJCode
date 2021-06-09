@@ -4,7 +4,7 @@ public class Interruttore {
     public int posizione;
     
     public void accendiLampadina() {
-        while (interruttore.posizione == ACCESO) {
+        while (posizione == ACCESO) {
             // codice omesso
         }
     }
