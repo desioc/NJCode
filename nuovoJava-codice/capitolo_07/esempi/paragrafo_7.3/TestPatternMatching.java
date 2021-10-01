@@ -17,7 +17,7 @@ public class TestPatternMatching {
     }
 
     public void pagaDipendente(Dipendente dip) {
-        dip.getAnniDiEsperienza();
+        //dip.getAnniDiEsperienza();
 
         if (dip instanceof Programmatore pro) {
             //pro = new Programmatore();
