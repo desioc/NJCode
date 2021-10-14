@@ -76,3 +76,4 @@ public class SongDAO implements DAO<Song> {
         return new Song(rs.getInt("SongID"), rs.getString("Title"), rs.getString("Artist"), rs.getInt("Release_Year"));
     }
 }
+record Song (int id, String title, String artist, int year) {}
