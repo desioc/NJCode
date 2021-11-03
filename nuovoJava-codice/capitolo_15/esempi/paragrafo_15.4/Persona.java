@@ -6,7 +6,7 @@ public class Persona implements java.io.Serializable {
     private String nome;
     private String cognome;
     private transient Thread t = new Thread();
-    private transient /* static */ String codiceSegreto;
+    private transient  /* static */ String codiceSegreto;
 
     public Persona(String nome, String cognome, String codiceSegreto) {
         this.setNome(nome);

@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.*;
 
-public class TestMetodiAggregationMethods {
+public class TestAggregationMethods {
     public static void main(String args[]) {
         List<Canzone> canzoni = List.of(
             new Canzone("The Architect" , "Haken"),
