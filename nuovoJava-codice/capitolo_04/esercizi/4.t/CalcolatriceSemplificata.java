@@ -29,4 +29,7 @@ public class CalcolatriceSemplificata {
         return d1 > d2 ? d2 : d1;
     }
 
+    public double media(double d1, double d2) { 
+        return (d1 + d2)/2; 
+    } 
 }

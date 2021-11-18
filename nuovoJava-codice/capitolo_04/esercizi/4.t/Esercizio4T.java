@@ -9,6 +9,6 @@ public class Esercizio4T {
         System.out.println("il resto della divisione tra 42.7 e 47.8 è " + calcolatriceSemplificata.restituisciResto(42.7, 47.8));
         System.out.println("Il massimo tra 42.7 e 47.8 è " + calcolatriceSemplificata.massimo(42.7, 47.8));
         System.out.println("Il minimo tra 42.7 e 47.8 è " + calcolatriceSemplificata.minimo(42.7, 47.8));
+        System.out.println("La media tra 42.7 e 47.8 è " + calcolatriceSemplificata.media(42.7, 47.8)); 
     }
-
 }
