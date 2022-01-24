@@ -10,11 +10,11 @@ public class ThreadCreation implements Runnable {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             System.out.println("principale interrotto");
-            
         }
         System.out.println("uscita Thread principale");
     }
 
+    @Override
     public void run() {
         try {
             for (int i = 5; i > 0; i--) {
@@ -23,7 +23,6 @@ public class ThreadCreation implements Runnable {
             }
         } catch (InterruptedException e) {
             System.out.println("figlio interrotto");
-            
         }
         System.out.println("uscita Thread figlio");
     }

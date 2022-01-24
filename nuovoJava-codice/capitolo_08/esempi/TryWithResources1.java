@@ -21,16 +21,16 @@ public class TryWithResources1 {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
+                rs = null;
             }
-            rs = null;
             if (stmt != null) {
                 try {
                     stmt.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
+                stmt = null;
             }
-            stmt = null;
             if (conn != null) {
                 try {
                     conn.close();

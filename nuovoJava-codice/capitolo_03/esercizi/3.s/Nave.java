@@ -8,7 +8,6 @@ public class Nave {
 
     public void caricaAuto(Auto auto) {
         autoArray[indice] = auto;
-        System.out.println("Auto: "+ auto.tipo +" caricata");
         indice++;
     }
 }

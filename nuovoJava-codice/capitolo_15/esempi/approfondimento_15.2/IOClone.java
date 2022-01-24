@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class IOClone {
-    public static <O extends Serializable> O cloneObject(O object) throws IOException, ClassNotFoundException {
+    public synchronized static <O extends Serializable> O cloneObject(O object) throws IOException, ClassNotFoundException {
         if (object == null) {
             return null;
         }

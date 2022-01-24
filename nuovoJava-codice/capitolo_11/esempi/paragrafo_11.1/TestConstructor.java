@@ -6,6 +6,7 @@ public class TestConstructor {
         Constructor<Punto> puntoConstructor = puntoClass.getDeclaredConstructor();
         Punto punto = puntoConstructor.newInstance();
         System.out.println(punto);
+        
     }
 }
 class Punto {

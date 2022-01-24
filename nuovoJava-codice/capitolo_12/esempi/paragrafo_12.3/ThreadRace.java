@@ -2,6 +2,7 @@ class Clicker implements Runnable {
     private long click = 0L;
     private Thread t;
     private volatile boolean running = true;
+    
     public Clicker(int p) {
         t = new Thread(this);
         t.setPriority(p);
@@ -36,8 +37,7 @@ public class ThreadRace {
         hi.startThread();
         try {
             Thread.sleep(10000);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
         }
         lo.stopThread();
         hi.stopThread();

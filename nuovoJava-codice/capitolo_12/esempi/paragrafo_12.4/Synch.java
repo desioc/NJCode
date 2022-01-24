@@ -1,11 +1,11 @@
 class CallMe {
-    /*synchronized */   void call(String msg) {
+    /* synchronized */ void call(String msg) {
         System.out.print("["+ msg);
         try {
             Thread.sleep(1000);
         }
         catch (Exception e) {
-        } ;
+        };
         System.out.println("]");
     }
 }
@@ -18,9 +18,9 @@ class Caller implements Runnable {
         new Thread(this).start();
     }
     public void run() {
-//synchronized(target){
-        target.call(msg);
-//}
+           //synchronized(target){
+               target.call(msg);
+          //}
     }
 }
 public class Synch {

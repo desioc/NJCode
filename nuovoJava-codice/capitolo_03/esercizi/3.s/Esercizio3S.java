@@ -7,5 +7,8 @@ public class Esercizio3S {
         nave.caricaAuto(auto1);
         nave.caricaAuto(auto2);
         nave.caricaAuto(auto3);
+        System.out.println("Auto: " + nave.autoArray[0].tipo + " caricata");
+        System.out.println("Auto: " + nave.autoArray[1].tipo + " caricata");
+        System.out.println("Auto: " + nave.autoArray[2].tipo + " caricata");
     }
 }

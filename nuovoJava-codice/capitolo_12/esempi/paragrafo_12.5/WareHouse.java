@@ -3,13 +3,14 @@ public class WareHouse implements GeneralWareHouse{
   private int idNumber;
   private boolean empty = true;
   public synchronized void put(int idNumber) {
-    if (!empty)
+    if (!empty) {
       try {
         wait();
       }
       catch (InterruptedException exc) {
         exc.printStackTrace();
       }
+    }
     this.idNumber = idNumber;
     numberOfProducts++;
     printSituation("Produced " + idNumber);

@@ -9,8 +9,7 @@ public class ThreadExists {
                 System.out.println(""+ n);
                 Thread.sleep(1000);  
             }
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             System.out.println("Thread interrotto");
         }
     }
