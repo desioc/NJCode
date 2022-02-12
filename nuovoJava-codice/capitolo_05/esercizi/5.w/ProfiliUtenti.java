@@ -27,7 +27,7 @@ public class ProfiliUtenti {
     }
 
     public void setUtenti(Utente[] utenti) {
-        this.setUtenti(utenti);
+        this.utenti = utenti;
     }
 
     public Utente[] getUtenti() {

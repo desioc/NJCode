@@ -18,7 +18,7 @@ public class PortaMonete {
      * @param valori
      *          un varargs di valori di monete.
      */
-    public PortaMonete(int... valori){
+    public PortaMonete(int[] valori){
         int numeroMonete = valori.length;
         for (int i = 0; i < numeroMonete; i++) {
             if (i >= 10) {

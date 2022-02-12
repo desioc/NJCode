@@ -1,6 +1,6 @@
 Codice di "Il nuovo Java" di Claudio De Sio Cesari - Hoepli Editore
 
-Versione 2.1.2 (03/11/2021)
+Versione 2.2 (12/02/2022)
 
 Queste cartelle contengono tutto il codice del libro diviso per capitoli. Per ogni cartella relativa ad un capitolo troverete due sottocartelle: "esempi" ed "esercizi".
 Nella cartella "esempi" trovate tutti gli esempi di codice che si possono visualizzare nelle pagine del libro, suddivise tra sottocartelle che identificano il paragrafo di appartenenenza.
