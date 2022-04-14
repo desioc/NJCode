@@ -9,6 +9,6 @@ public class TestReduce {
             parola1.length() > parola2.length() ? parola1 : parola2);
          if (parolaOptional.isPresent()) {
              System.out.println(parolaOptional.get());
-         }
+         } 
     }
 }

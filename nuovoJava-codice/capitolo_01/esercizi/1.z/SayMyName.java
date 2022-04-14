@@ -5,6 +5,5 @@ public class SayMyName {
         System.out.println("*      *       ******   *   *   *   *   *   *   *");
         System.out.println("*      *       *    *   *   *   *  *    *   *   *");
         System.out.println("*****  *****   *    *   *****   ***     *   *****");
-
     }
 }
