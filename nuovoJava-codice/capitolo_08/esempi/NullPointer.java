@@ -6,5 +6,4 @@ public class NullPointer {
     static String getDescription(Throwable o) {
         return o.getMessage();
     }
-    
 }

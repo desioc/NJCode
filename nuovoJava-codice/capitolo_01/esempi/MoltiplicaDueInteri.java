@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class MoltiplicaDueInteri {
     public static void main(String args[]) {
+        
         System.out.println("Ciao, so moltiplicare due numeri interi.");
         System.out.println("Scrivi il primo valore e batti invio");
         Scanner keyboardScanner = new Scanner(System.in);

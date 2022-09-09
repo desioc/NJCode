@@ -6,9 +6,11 @@ public class Esercizio8OO {
         esercizio8OO.start();
     }
     
+    
     public void start() {
+        Scanner scanner = null;
         try {
-            Scanner scanner = new Scanner(System.in);
+            scanner = new Scanner(System.in);
             System.out.println("Inserisci un valore in Kelvin");
             float kelvin = scanner.nextFloat();
             float celsius = kelvin - 273.15F;
@@ -20,6 +22,8 @@ public class Esercizio8OO {
         catch (InputMismatchException exc) {
             System.out.println("Il valore deve essere numerico");
             start();
+        } finally {
+            scanner.close();
         }
     }
 }

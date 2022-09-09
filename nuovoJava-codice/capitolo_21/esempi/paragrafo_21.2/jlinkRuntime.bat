@@ -1,0 +1,1 @@
+jlink --add-modules java.base,java.desktop --output myjre

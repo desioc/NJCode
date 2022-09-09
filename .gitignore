@@ -1,6 +1,8 @@
 *.class
 *.dat
 *.ctrl
+*.jar
+*.exe
 nuovoJava-codice/capitolo_17/esercizi/17.h/Rubrica/README_DO_NOT_TOUCH_FILES.txt
 nuovoJava-codice/capitolo_17/esercizi/17.h/Rubrica/log/README_DO_NOT_TOUCH_FILES.txt
 nuovoJava-codice/capitolo_17/esercizi/17.h/Rubrica/seg0/README_DO_NOT_TOUCH_FILES.txt

@@ -1,0 +1,9 @@
+Codice di "Il nuovo Java" di Claudio De Sio Cesari - Hoepli Editore
+
+I file batch (suffisso .bat) si dovrebbero lanciare secondo quest'ordine:
+
+1) javacJar.bat: compila il file sorgente SwingMixExample.java. I file .class verranno generati all'interno del package jpackage.test. Poi viene tutto impacchettato nel file SwingMix.jar all'interno della cartella swingmix.
+2) jlinkRuntime.bat: crea la cartella myjre che rappresenta il runtime contenente solo i moduli necessari a lanciare l'applicazione.
+3) jpackageJarRuntime.bat: crea il file SwingMix_1.0.exe che rappresenta il file di installazione desiderato.
+
+Lanciando il file SwingMix_1.0.exe con un doppio click potremo installare la nostra applicazione.

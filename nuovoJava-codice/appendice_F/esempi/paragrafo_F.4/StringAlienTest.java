@@ -4,7 +4,7 @@ public class StringAlienTest {
     public void method() {
         String local ="K";
         System.out.println("KK"=="K"+constant);
-        System.out.println("K"=="K"+local);
+        System.out.println("KK"=="K"+local);
     }
 
     public static void main(String args[]) {
