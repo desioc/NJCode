@@ -1,10 +1,10 @@
 public class StringAlienTest {
-    final String constant ="K";
+    final String constant = "K";
 
     public void method() {
-        String local ="K";
-        System.out.println("KK"=="K"+constant);
-        System.out.println("KK"=="K"+local);
+        String local = "K";
+        System.out.println("KK" == "K" + constant);
+        System.out.println("KK" == "K" + local);
     }
 
     public static void main(String args[]) {

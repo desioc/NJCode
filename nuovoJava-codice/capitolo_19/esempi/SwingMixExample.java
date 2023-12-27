@@ -169,13 +169,13 @@ public class SwingMixExample {
             String[] headers = {"Name", "City", "State"
             };
             Object[][] contents = {
-                {"Fulvio", "London", "England"},
+                {"Fulvio", "Bruxelles", "Belgium"},
                 {"Luca", "Foligno", "Italy"},
                 {"Fabio", "Siena", "Italy"},
                 {"Bruno", "Turin", "Italy"},
                 {"Edo", "Poznan", "Poland"},
                 {"Marcella", "Madrid", "England"},
-                {"Piero", "Cairo", "Egypt"}
+                {"Piero", "Lagos", "Nigeria"}
             };
             JTable table = new JTable(contents, headers);
             table.setBorder(BorderFactory.createEtchedBorder());

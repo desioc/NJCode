@@ -16,11 +16,11 @@ public class TestAggregationMethods {
         //canzoni.stream().dropWhile(c -> c.titolo().contains("e")).forEach(c -> System.out.println(c.titolo()));
         List<Character> chars = List.of('C', 'A', 'B', 'A');
         //chars.stream().distinct().forEach(System.out::println);
-        //chars.stream().distinct().sorted().forEach(System.out::println);
+        //chars.stream().dis+ c)).distinct()
+        //   .forEach(c -> System.out.println("Elemento nello stream di output: " + c));tinct().sorted().forEach(System.out::println);
         //chars.stream().distinct().sorted((a,b) -> -(a.compareTo(b))).forEach(System.out::println);
         //chars.stream().distinct().mapToInt(c -> (int)c).forEach(System.out::println);
-        //chars.stream().peek(c -> System.out.println("Elemento nello stream di input: " + c)).distinct()
-        //   .forEach(c -> System.out.println("Elemento nello stream di output: " + c));
+        //chars.stream().peek(c -> System.out.println("Elemento nello stream di input: " 
         Stream<Character> cStream = chars.stream()
             .peek(c -> System.out.println("Elemento nello stream di input: " + c))
             .distinct()
