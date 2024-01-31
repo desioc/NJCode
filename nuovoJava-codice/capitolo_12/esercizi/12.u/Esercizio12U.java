@@ -1,6 +1,6 @@
 import java.util.*;
 import java.time.*;
-import java.text.*;
+import java.time.format.*;
 
 public class Esercizio12U extends TimerTask {
     
@@ -12,8 +12,8 @@ public class Esercizio12U extends TimerTask {
 
     @Override
     public void run() {
-        DateFormat timeFormatter = DateFormat.getTimeInstance(DateFormat.DEFAULT, Locale.getDefault());
-        System.out.println("Sveglia! Sono le "+ LocalTime.now());
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT);
+        System.out.println("Sveglia! Sono le "+ timeFormatter.format(LocalTime.now()));
         timer.cancel();
     }
 

@@ -30,13 +30,13 @@ public class VerificatoreInterattivo {
     }
 
     private static void verificaClasse(String stringa) throws Exception {
-        Class objectClass = Class.forName(stringa);
+        Class<?> objectClass = Class.forName(stringa);
         //verificaBreve(stringa, objectClass);
         //verificaSpecifica(stringa, objectClass);
         verificaBean(stringa, objectClass);
     }
 
-    private static void verificaBreve(String stringa, Class objectClass) throws AnnotationException {
+    private static void verificaBreve(String stringa, Class<?> objectClass) throws AnnotationException {
         try {
             System.out.println("Inizio verifica annotazione Breve per " + stringa);
             Annotation breve = objectClass.getAnnotation(Breve.class);
@@ -52,18 +52,18 @@ public class VerificatoreInterattivo {
                     System.out.println(method);
                 }
             } else {
-                System.out.println("Questa classe non Ã¨ annotata con @Breve");
+                System.out.println("Questa classe non è annotata con @Breve");
             }
         } finally {
             System.out.println("Fine verifica annotazione Breve per " + stringa);
         }
     }
 
-    private static void verificaSpecifica(String stringa, Class objectClass) throws AnnotationException {
+    private static void verificaSpecifica(String stringa, Class<?> objectClass) throws AnnotationException {
         try {
             System.out.println("Inizio verifica annotazione Specifica per "
                     + stringa);
-            Specifica specifica = (Specifica) objectClass.getAnnotation(Specifica.class);
+            Specifica specifica = objectClass.getAnnotation(Specifica.class);
             if (specifica != null) {
                 int numeroVariabiliDaSpecifica = specifica.value();
                 Field[] fields = objectClass.getDeclaredFields();
@@ -78,32 +78,32 @@ public class VerificatoreInterattivo {
                     System.out.println(field);
                 }
             } else {
-                System.out.println("Questa classe non Ã¨ annotata con @Specifica");
+                System.out.println("Questa classe non è annotata con @Specifica");
             }
         } finally {
             System.out.println("Fine verifica annotazione Specifica per " + stringa);
         }
     }
 
-    private static void verificaBean(String stringa, Class objectClass) throws AnnotationException, NoSuchMethodException {
+    private static void verificaBean(String stringa, Class<?> objectClass) throws AnnotationException {
         try {
             System.out.println("Inizio verifica annotazione @Bean per "
                     + stringa);
-            Bean bean = (Bean) objectClass.getAnnotation(Bean.class);
+            Bean bean = objectClass.getAnnotation(Bean.class);
             if (bean != null) {
                 controlloNumeroVariabili(bean, objectClass, stringa);
                 controlloNumeroMetodi(bean, objectClass, stringa);
                 controlloCostruttoreSenzaParametro(objectClass, stringa);
                 controlloIncapsulamento(objectClass, stringa);
             } else {
-                System.out.println("Questa classe non Ã¨ annotata con @Bean");
+                System.out.println("Questa classe non è annotata con @Bean");
             }
         } finally {
             System.out.println("Fine verifica annotazione Bean per " + stringa);
         }
     }
 
-    private static void controlloNumeroVariabili(Bean bean, Class objectClass, String stringa) throws AnnotationException {
+    private static void controlloNumeroVariabili(Bean bean, Class<?> objectClass, String stringa) throws AnnotationException {
         int numeroMinimoVariabili = bean.numeroMinimoVariabili();
         Field[] fields = objectClass.getDeclaredFields();
         final int numeroVariabili = fields.length;
@@ -118,7 +118,7 @@ public class VerificatoreInterattivo {
         }
     }
 
-    private static void controlloNumeroMetodi(Bean bean, Class objectClass, String stringa) throws AnnotationException, NoSuchMethodException {
+    private static void controlloNumeroMetodi(Bean bean, Class<?> objectClass, String stringa) throws AnnotationException {
         int numeroMassimoMetodi = bean.numeroMassimoMetodi();
         Method[] methods = objectClass.getDeclaredMethods();
         final int numeroMetodi = methods.length;
@@ -133,33 +133,33 @@ public class VerificatoreInterattivo {
         }
     }
 
-    private static void controlloCostruttoreSenzaParametro(Class objectClass, String stringa) throws AnnotationException, NoSuchMethodException {
-        Constructor constructor = objectClass.getConstructor();
-        if (constructor == null) {
+    private static void controlloCostruttoreSenzaParametro(Class<?> objectClass, String stringa) throws AnnotationException {
+        try {
+            Constructor<?> constructor = objectClass.getConstructor();
+            System.out.println("Classe " + stringa
+                    + " costruttore senza parametri presente!:");
+            System.out.println(constructor);
+        } catch(NoSuchMethodException exc) {
             throw new AnnotationException(
-                    "Niente costruttore senza parametri!");
+                        "Niente costruttore senza parametri!");
         }
-        System.out.println("Classe " + stringa
-                + " costruttore senza parametri presente!:");
-        System.out.println(constructor);
     }
 
-    private static void controlloIncapsulamento(Class objectClass, String stringa) throws AnnotationException, NoSuchMethodException {
-        Field[] fields = objectClass.getDeclaredFields();
-        for (Field field : fields) {
-            final String nomeVariabile = field.getName();
-            final Class<?> type = field.getType();
-            final Method setMethod = objectClass.getDeclaredMethod("set" + capitalize(nomeVariabile), type);
-            final Method getMethod = objectClass.getDeclaredMethod("get" + capitalize(nomeVariabile));
-            if (setMethod == null || getMethod == null || 
-                    !getMethod.getReturnType().equals(type)) {
-                throw new AnnotationException("Variabile " + nomeVariabile +
-                        " non incapsulata correttamente nella classe " + stringa);
-
+    private static void controlloIncapsulamento(Class<?> objectClass, String stringa) throws AnnotationException {
+        String nomeVariabile =  null;
+        try {
+            Field[] fields = objectClass.getDeclaredFields();
+            for (Field field : fields) {
+                nomeVariabile = field.getName();
+                final Class<?> type = field.getType();
+                final Method setMethod = objectClass.getDeclaredMethod("set" + capitalize(nomeVariabile), type);
+                final Method getMethod = objectClass.getDeclaredMethod("get" + capitalize(nomeVariabile));
             }
+            System.out.println("Classe " + stringa + " incapsulamento ok!");
+        } catch (NoSuchMethodException exc) {
+            throw new AnnotationException("Variabile " + nomeVariabile +
+                " non incapsulata correttamente nella classe " + stringa);            
         }
-        System.out.println("Classe " + stringa + " incapsulamento ok!");
-
     }
 
     private static String capitalize(String string) {

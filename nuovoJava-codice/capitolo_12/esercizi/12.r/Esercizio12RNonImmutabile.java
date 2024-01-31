@@ -1,15 +1,17 @@
+import java.util.Date;
+
 public class Esercizio12RNonImmutabile {
     
     private Integer intero;
 
-    private StringBuilder stringBuilder;
+    private Date date;
 
-    public void setStringBuilder(StringBuilder stringBuilder) {
-        this.stringBuilder = stringBuilder;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public StringBuilder getStringBuilder() {
-        return stringBuilder;
+    public Date getDate() {
+        return date;
     }
 
     public void setIntero(Integer intero) {
