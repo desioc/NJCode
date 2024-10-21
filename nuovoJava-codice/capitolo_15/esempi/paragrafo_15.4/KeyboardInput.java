@@ -6,8 +6,8 @@ public class KeyboardInput {
     public static void main (String args[]) throws IOException{
         String stringa = null;
         System.out.println("Digita qualcosa e premi invio...\nPer terminare il programma digitare \"fine\"");
-        try (InputStreamReader ir = new InputStreamReader(System.in);
-        BufferedReader in = new BufferedReader(ir)) {
+        try (InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader in = new BufferedReader(isr)) {
             stringa = in.readLine();
             while ( stringa != null ) {
                 if (stringa.equals("fine")) {

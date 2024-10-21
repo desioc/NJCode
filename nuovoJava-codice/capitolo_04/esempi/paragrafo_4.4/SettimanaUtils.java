@@ -3,23 +3,23 @@ public class SettimanaUtils {
         String typeOfDay;
         switch (giornoDellaSettimana) {
             case"Monday":
-            typeOfDay ="Inizio settimana";
-            break;
+                typeOfDay ="Inizio settimana";
+                break;
             case"Tuesday":
             case"Wednesday":
             case"Thursday":
-            typeOfDay ="Settimana piena";
-            break;
+                typeOfDay ="Settimana piena";
+                break;
             case"Friday":
-            typeOfDay ="Fine settimana lavorativa";
-            break;
+                typeOfDay ="Fine settimana lavorativa";
+                break;
             case"Saturday":
             case"Sunday":
-            typeOfDay ="Weekend";
-            break;
+                typeOfDay ="Weekend";
+                break;
             default:
-            typeOfDay ="Indefinito!";
-            break;
+                typeOfDay ="Indefinito!";
+                break;
         }
         return typeOfDay;
     }

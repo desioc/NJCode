@@ -11,7 +11,7 @@ public class MoltiplicaDueInteri {
         System.out.println("Scrivi il secondo valore e batti invio");
         int input2 = keyboardScanner.nextInt();
         int risultato = input1 * input2;
-        System.out.println("Il risultato è:");
+        System.out.println("Il risultato Ã¨:");
         System.out.println(risultato);
     }
 }

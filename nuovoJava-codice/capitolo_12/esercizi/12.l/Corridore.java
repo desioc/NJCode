@@ -49,7 +49,7 @@ public class Corridore extends Thread {
     }
 
     public void basta(){
-        System.out.println("Meno male, non ce la facevo più...");
+        System.out.println("Meno male, non ce la facevo piu...");
         inAzione = false;
     }
 }

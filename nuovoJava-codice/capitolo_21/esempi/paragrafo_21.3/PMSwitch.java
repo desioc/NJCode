@@ -8,9 +8,9 @@ public class PMSwitch {
         return "String of length " + string.length();
       }
       return "Unknown";
-    }
+    } */
 
-/* public static String getInfo(Object object) {
+    /* public static String getInfo(Object object) {
         return switch (object) {
             case Integer i -> (i < 0 ? "Negative" : "Positive")+ " integer" ;
             case String s -> "String of length " + s.length();
@@ -81,10 +81,10 @@ public class PMSwitch {
       };
     } */
 
-    //paragrafo 21.3.9 Controllo di nullità
+    //paragrafo 21.3.9 Controllo di nullita'
 /*  public static String getInfo(Object object) {
       return switch (object) {
-        case null -> "Null!"; // controllo di nullità
+        case null -> "Null!"; // controllo che non sia nullita'
         case Integer i -> (i < 0 ? "Negative" : "Positive")+ " integer";
         case String s -> "String of length " + s.length();
         default -> "Unknown";

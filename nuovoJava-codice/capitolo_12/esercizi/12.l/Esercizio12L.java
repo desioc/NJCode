@@ -7,7 +7,7 @@ public class Esercizio12L {
         Scanner scanner = new Scanner(System.in);
         boolean cicla = true;
         System.out.println(
-           "Ciao allenatore, il corridore è a tua disposizione!");
+           "Ciao allenatore, il corridore e' a tua disposizione!");
         System.out.println("Scrivi i comandi e batti invio");
         System.out.println("(corri, cammina, fermati, basta)");
         while (cicla) {
