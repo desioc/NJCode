@@ -13,7 +13,7 @@ public class FirstJFXExample extends Application {
     }
     @Override
     public void start(Stage stage) {
-        Image image = new Image("/res/Duke-Guitar.png");
+        Image image = new Image("file:/res/Duke-Guitar.png");
         Label label = new Label("JavaFX \nRocks! ", new ImageView(image));
         label.setTextAlignment(TextAlignment.CENTER);
         label.setFont(new Font("Book Antiqua", 120));
