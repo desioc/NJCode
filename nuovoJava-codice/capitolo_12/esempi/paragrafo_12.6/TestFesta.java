@@ -6,12 +6,13 @@ public class TestFesta {
         CyclicBarrier luogoDellaFesta = new CyclicBarrier(3, new Runnable() {
             @Override
             public void run() {
-                System.out.println("Tutti presenti, possiamo iniziare!");
+                System.out.println(
+                "Tutti presenti, possiamo iniziare!");
             }
-        } );
+        });
         Festa festa = new Festa(luogoDellaFesta);
-        new Thread(festa,"Antonio").start();
-        new Thread(festa,"Marcello").start();
-        new Thread(festa,"Serena").start();
+        new Thread(festa, "Antonio").start();
+        new Thread(festa, "Marcello").start();
+        new Thread(festa, "Serena").start();
     }
 }

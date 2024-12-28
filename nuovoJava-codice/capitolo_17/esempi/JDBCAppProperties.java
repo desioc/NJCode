@@ -9,9 +9,9 @@ public class JDBCAppProperties {
         ResultSet res  = null;
         try {
              Properties p = new Properties();
-             p.load(new FileInputStream("config.properties"));
+             p.load(new FileReader("config.properties")); // meglio File Reader che FileInputStream!
              String driver = p.getProperty("jdbcDriver");
-             Class.forName(driver);
+             //Class.forName(driver);
              String url = p.getProperty("jdbcUrl");
              con = DriverManager.getConnection (url/*, p.getProperty("jdbcUsername"),
                  p.getProperty("jdbcPassword")*/);
@@ -24,7 +24,7 @@ public class JDBCAppProperties {
              res.close();
              cmd.close();
              con.close();
-        } catch (SQLException | ClassNotFoundException | IOException e) {
+        } catch (SQLException | /*ClassNotFoundException |*/ IOException e) {
              e.printStackTrace();
         } 
     }
